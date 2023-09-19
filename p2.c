@@ -15,7 +15,7 @@ void main() {
  PWM1_Init(1000);
  PWM1_Start();
 do {
-    if (led1 == 0 && Button(&PORTA, 0, 1, 1)) {               // Detect logical one del Botón
+    if (led1 == 0 && Button(&PORTA, 0, 1, 1)) {               // Detect logical one del BotÃ³n
          PORTD.F2 = 1;
          led1 = 1;
          for(i = 0;i<=5;i++){
